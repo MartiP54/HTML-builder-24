@@ -1,4 +1,4 @@
-const fs =require('fs');
+const fs = require('fs');
 const path = require('path');
 const process = require('process');
 
@@ -12,7 +12,7 @@ const exit = () => {
   process.exit();
 };
 
-process.stdout.write('',start);
+process.stdout.write('', start);
 process.on('SIGINT', exit);
 
 process.stdin.on('data', (data) => {
